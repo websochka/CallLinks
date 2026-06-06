@@ -24,7 +24,7 @@ https://calllinks.sochka.com/push/send.php?number={phone}&deviceToken={token}
 Пример:
 
 ```text
-https://calllinks.sochka.com/push/send.php?number=%2B380501234567&deviceToken=YOUR_DEVICE_TOKEN
+https://calllinks.sochka.com/push/send.php?number=%2B78012345678&deviceToken=YOUR_DEVICE_TOKEN
 ```
 
 После запроса номер будет отправлен на смартфон, связанный с указанным `TOKEN`.
@@ -67,7 +67,7 @@ GET https://calllinks.sochka.com/push/pay.php?deviceToken={token}
 ## Пример интеграции в сайт
 
 ```html
-<button id="call-client" data-phone="+380501234567">
+<button id="call-client" data-phone="+78012345678">
   Позвонить клиенту
 </button>
 
@@ -108,6 +108,12 @@ GET https://calllinks.sochka.com/push/pay.php?deviceToken={token}
 - [Файл для LLM-ассистентов](llms.txt)
 
 ## Приложения и расширения
+
+CallLinks можно использовать без программирования и API-интеграции. Для этого достаточно установить расширение CallLinks в браузер на компьютере и приложение CallLinks на смартфон.
+
+После установки расширение автоматически распознает телефонные номера на веб-страницах и делает их кликабельными. Пользователь нажимает на номер в браузере, а CallLinks отправляет его в приложение на смартфоне. На телефоне открывается стандартный номеронабиратель с уже подставленным номером, после чего остается только подтвердить звонок.
+
+Такой вариант подходит для CRM, сайтов, интернет-магазинов, таблиц и любых веб-страниц, где телефоны отображаются как обычный текст. Программирование нужно только для собственных API-интеграций, автоматизации или подключения CallLinks к внутренним сервисам.
 
 Android:
 
